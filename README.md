@@ -24,7 +24,8 @@ environment:
  ```
 
 ## Usage
-The example uses this code to create the grid of **TimeControl** items grouped by **TimeControlType**.
+The example uses this code to create the grid of **TimeControl** items grouped by **TimeControlType** with group sticky headers.  
+Check the example folder for the full implementation.
 
 ```dart
 import 'package:flutter/material.dart';

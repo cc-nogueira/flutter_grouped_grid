@@ -1,6 +1,6 @@
 name: grouped_grid
-description: A package to display a grouped grid of items.
-version: 0.1.1
+description: A package to display a grouped grid of items with optional group headers and footers.
+version: 0.1.2
 repository: https://github.com/cc-nogueira/flutter_grouped_grid
 
 environment:

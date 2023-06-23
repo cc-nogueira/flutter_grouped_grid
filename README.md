@@ -7,7 +7,7 @@ A package to display a grouped grid of items.
 ## Preview
 Image for the application in the example folder:
 
-<img width="360px" src="https://github.com/cc-nogueira/flutter_grouped_grid/raw/media/example.gif" alt=""/>
+<img width="270px" src="https://github.com/cc-nogueira/flutter_grouped_grid/raw/media/example.gif" alt=""/>
 
 ## Features
 Provides a grouped GridView variant with:

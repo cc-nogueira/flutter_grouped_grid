@@ -5,6 +5,9 @@
 A package to display a grouped grid of items.
 
 ## Preview
+Image for the application in the example folder:
+
+<img width="360px" src="https://github.com/cc-nogueira/flutter_grouped_grid/raw/media/example.gif" alt=""/>
 
 ## Features
 Provides a grouped GridView variant with:
@@ -21,9 +24,52 @@ environment:
  ```
 
 ## Usage
+The example uses this code to create the grid of **TimeControl** items grouped by **TimeControlType**.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:grouped_grid/grouped_grid.dart';
+
+import '../../../domain/entity/time_control.dart';
+
+class TimeControlGroupedGridView extends StatelessWidget {
+
+  const TimeControlGroupedGridView({super.key, required this.data, required this.columnCount});
+
+  final int columnCount;
+  final Map<TimeControlType, List<TimeControl>> data;
+
+  @override
+  Widget build(BuildContext context) {
+    return GroupedGridView(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: columnCount,
+        crossAxisSpacing: 2,
+        mainAxisSpacing: 2,
+      ),
+      groupKeys: data.keys,
+      groupHeaderBuilder: _groupHeaderBuilder,
+      itemCountForGroup: _itemCountForGroup,
+      itemBuilder: _itemBuilder,
+    );
+  }
+
+  Widget _groupHeaderBuilder(BuildContext context, TimeControlType group) {
+    // see example folder
+  }
+
+  int _itemCountForGroup(TimeControlType key) {
+    // see example folder
+  }
+
+  Widget _itemBuilder(BuildContext context, ({TimeControlType key, int itemIndex}) group) {
+    // see example folder
+  }
+}
+
+```
 
 ## Aknowlodgements
-
 This project is a merge of ideas from two dart packages and I would like to thank both authors:
   - [group_grid_view](https://pub.dev/packages/group_grid_view)
   - [gouped_scroll_view](https://pub.dev/packages/grouped_scroll_view)

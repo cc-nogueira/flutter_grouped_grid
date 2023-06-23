@@ -1,4 +1,4 @@
-import 'package:example/src/domain/entity/time_control.dart';
+import '../domain/entity/time_control.dart';
 
 const sampleData = {
   TimeControlType.bullet: [

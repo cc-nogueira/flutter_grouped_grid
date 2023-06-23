@@ -1,0 +1,20 @@
+name: grouped_grid
+description: A package to display a grouped grid of items.
+version: 0.1.0
+repository: https://github.com/cc-nogueira/grouped_grid
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sliver_tools: ^0.2.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
